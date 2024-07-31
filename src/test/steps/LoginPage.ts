@@ -5,6 +5,9 @@ import { pageFixture } from '../../hooks/pageFixture'
 Given('Web sitesine giderim', async function () {
     await pageFixture.page.goto('https://practicesoftwaretesting.com/#/')
 });
+// girmem için siteye asenyron bir method oldugu ıcın await yazmalıyım
+//sonra page objesıne ihtiyacım var notmalde playwrgiht da testın ıcınde obje olarak gelıyordu
+//
 
 When('Sign in linkine tıklarım', async function () {
     await pageFixture.page.getByRole('link', {name: "Sign in"}).click()

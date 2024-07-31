@@ -13,4 +13,9 @@ Feature: Login Testleri
       | customer@practicesoftwaretesting.com  | welcome01 |
       | customer2@practicesoftwaretesting.com | welcome01 |
 
-      # npm test yazarsak  terminalde bize step leri veriyor 
+      # Featurelar ıyazdıktan sonra npm test yazarsak  terminalde bize step leri veriyor 
+      # dry run true olursa eklersek tanımlanmayan  seteplerı verıyor  
+      # proje de eksık olan adım varsa onu kontrol edıyor true olunca
+      # dry run tru dersek testler  kosulmaz sadece testlerde eksık adımlar varsa
+      # onları verır
+

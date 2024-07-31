@@ -17,6 +17,7 @@ AfterAll(async function () {
 })
 
 AfterStep(async function ({ pickle }) {
+    //pickle senaryo isimlerini ifade eder
     // Ekran görüntüsü alır
     const img = await pageFixture.page.screenshot({ path: `./test-results/screenshot/${pickle.name}.png` })
     // Ekran görüntüsünü rapora ekler
@@ -29,6 +30,8 @@ Before(async function () {
     pageFixture.page = page
     pageFixture.pm = new PageManager(page)
 })
+//pagerlerı olusturduk ve kapattık after hook u ile her testten sonra kapattık kı bir sonrakı testte sıfırdan bılgılerı hatırlamamsı gerek
+
 
 After(async function ({ pickle, result }) {
     console.log(result?.status)
