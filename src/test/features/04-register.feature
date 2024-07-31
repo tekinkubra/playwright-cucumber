@@ -6,3 +6,5 @@ Feature: Register Testleri
     When Sign in linkine tıklarım
     And Register your account linkine tıklarım
     Then Customer registration başlığını görürüm
+
+    # npm test yazarsak  terminalde bize step leri veriyor 

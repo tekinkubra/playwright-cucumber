@@ -12,3 +12,5 @@ Feature: Login Testleri
       | email                                 | password  |
       | customer@practicesoftwaretesting.com  | welcome01 |
       | customer2@practicesoftwaretesting.com | welcome01 |
+
+      # npm test yazarsak  terminalde bize step leri veriyor 

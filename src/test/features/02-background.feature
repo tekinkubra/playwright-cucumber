@@ -15,3 +15,5 @@ Background:
     And Password kutusuna "welcome01" yazarım
     And Login butonuna tıklarım
     Then My account sayfasının açıldığını görürüm
+
+    # npm test yazarsak  terminalde bize step leri veriyor 
